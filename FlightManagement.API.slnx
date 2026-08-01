@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FlightManagement.API/FlightManagement.API.csproj" />
+  <Project Path="FlightManagement.Application/FlightManagement.Application.csproj" />
+  <Project Path="FlightManagement.Domain/FlightManagement.Domain.csproj" />
+  <Project Path="FlightManagement.Infrastructure/FlightManagement.Infrastructure.csproj" />
+</Solution>

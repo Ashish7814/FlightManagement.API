@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Features\Flights\" />
+    <Folder Include="Features\Aircraft\" />
+    <Folder Include="Features\Gates\" />
+    <Folder Include="Features\Delays\" />
+    <Folder Include="Features\BoardingStatus\" />
+    <Folder Include="Features\Airport\" />
+    <Folder Include="Features\Notifications\" />
+    <Folder Include="Features\Weather\" />
+    <Folder Include="Features\Routes\" />
+    <Folder Include="Features\Schedules\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
