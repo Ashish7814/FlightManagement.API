@@ -1,0 +1,70 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Text;
+
+namespace FlightManagement.Domain.Entities
+{
+    public class Flight
+    {
+
+        public int FlightId { get; set; }
+        public string FlightNumber { get; set; }
+
+        public int RouteId { get; set; }
+        public int AircraftId { get; set; }
+
+        public DateTime DepartureDateTime { get; set; }
+        public DateTime ArrivalDateTime { get; set; }
+
+        public DateTime? ActualDepartureDateTime { get; set; }
+        public DateTime? ActualArrivalDateTime { get; set; }
+
+        public string FlightStatus { get; set; }
+
+        public int CreatedBy { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        // Navigation
+        public Route Route { get; set; }
+        public Aircraft Aircraft { get; set; }
+
+        public ICollection<FlightPrice> Prices { get; set; }
+        public ICollection<FlightSeatAvailability> SeatAvailability { get; set; }
+        public ICollection<GateAssignment> GateAssignments { get; set; }
+        //public int FlightId { get; set; }
+        //public string FlightNumber { get; set; }
+
+        //public int RouteId { get; set; }
+        //public int AircraftId { get; set; }
+
+        //public DateTime DepartureDateTime { get; set; }
+        //public DateTime ArrivalDateTime { get; set; }
+
+        //public DateTime? ActualDepartureDateTime { get; set; }
+        //public DateTime? ActualArrivalDateTime { get; set; }
+
+        //public string FlightStatus { get; set; }
+
+        //public string DepartureGate { get; set; }
+        //public string ArrivalGate { get; set; }
+
+        //public decimal EconomyPrice { get; set; }
+        //public decimal BusinessPrice { get; set; }
+        //public decimal FirstClassPrice { get; set; }
+
+        //public int AvailableEconomySeats { get; set; }
+        //public int AvailableBusinessSeats { get; set; }
+        //public int AvailableFirstClassSeats { get; set; }
+
+        //public int CreatedBy { get; set; }
+        //public DateTime CreatedAt { get; set; }
+        //public DateTime UpdatedAt { get; set; }
+        //public int TotalRecords { get; set; }
+
+        //// Navigation
+        //public Route Route { get; set; }
+        //public Aircraft Aircraft { get; set; }
+    }
+}
