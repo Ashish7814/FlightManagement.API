@@ -8,19 +8,25 @@
 
   <ItemGroup>
     <Folder Include="Common\Interfaces\" />
-    <Folder Include="DTOs\" />
     <Folder Include="Features\Flights\" />
     <Folder Include="Features\Aircraft\" />
     <Folder Include="Features\Gates\" />
     <Folder Include="Features\Delays\" />
     <Folder Include="Features\BoardingStatus\" />
-    <Folder Include="Features\Airport\" />
     <Folder Include="Features\Notifications\" />
     <Folder Include="Features\Weather\" />
     <Folder Include="Features\Routes\" />
     <Folder Include="Features\Schedules\" />
     <Folder Include="Mappings\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlightManagement.Domain\FlightManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>
