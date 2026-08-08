@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="14.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FlightManagement.Application\FlightManagement.Application.csproj" />
+    <ProjectReference Include="..\FlightManagement.Infrastructure\FlightManagement.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
