@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FlightManagement.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/flight")]
     [ApiController]
     public class AirportsController : ControllerBase
     {
@@ -17,6 +17,7 @@ namespace FlightManagement.API.Controllers
             _mediator = mediator;
         }
 
+        [HttpGet("getAllAirports")]
         [AllowAnonymous]
         public async Task<IActionResult> GetAllAirports([FromQuery] AirportSearchDto dto)
         {
